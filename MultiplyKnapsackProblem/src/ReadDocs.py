@@ -11,14 +11,6 @@ class ReadDocs:
     def tokenizer(self):
         self.lines = [line.strip().split() for line in self.lines]
 
-    # 5 2
-    # 9 6
-    # 5 3
-    # 10 2
-    # 7 9
-    # 6 2
-    # 6 10
-
     def define_Variables(self) -> list:
         n, m = map(int, self.lines[0][0:2])
         b = list(map(float, self.lines[1])) # capacidades de cada mochila
